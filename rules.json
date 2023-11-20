@@ -1,0 +1,34 @@
+{
+  id: 'cn.kidyn.qdmedical160',
+  name: '160',
+  groups: [
+    {
+      key: 1,
+      name: '跳过开屏广告',
+      desc: '猪猪侠不看广告！',
+      activityIds: ['cn.kidyn.qdmedical160.activity.splash.SplashActivity'],
+      rules: [
+        {
+          matches: '[id="cn.kidyn.qdmedical160:id/btn_jump"]',
+          snapshotUrls: 'https://i.gkd.li/snapshot/1700460888546',
+        }
+      ],
+    },
+    {
+      key: 2,
+      name: '跳过关心的内容',
+      desc: '猪猪侠不关心这些！',
+      activityIds: ['com.nykj.home.activity.ContentSettingActivity'],
+      rules: [
+        {
+          matches: '[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/snapshot/1700460112540',
+        },
+        {
+          matches: '[text="确定"]',
+          snapshotUrls: 'https://i.gkd.li/snapshot/1700460674918',
+        },
+      ],
+    },
+  ],
+}
